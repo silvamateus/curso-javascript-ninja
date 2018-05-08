@@ -93,7 +93,8 @@ function getMonthNumber(month){
         'novembro', 
         'dezembro'
     ]
-    return monthNum.indexOf(month) + 1
+    var convertedMonth = monthNum.indexOf(month)+ 1;
+    return convertedMonth < 10? `0${convertedMonth}` : convertedMonth;
 }
 var dateMonth = 'março';
 dateMonth.toLowerCase();
